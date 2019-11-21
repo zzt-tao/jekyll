@@ -1,0 +1,69 @@
+.nav .zhang a{
+	color:#222!important;
+	font-weight: 900;
+}
+@keyframes bottom_top{
+	form{transform: translateY(30px);opacity:0;}
+	to{transform: translateY(0px);opacity:1;}
+}
+@keyframes img_Bigger{
+	0%{
+        opacity: 0.5;
+        transform: scale(1);
+    }
+    45%{
+        opacity: 1;
+        transform: scale(1.15);
+    }
+    90%{
+        opacity: 0.5;
+        transform: scale(1);
+    }
+    100%{
+    	opacity: 0.5;
+        transform: scale(1);
+    }
+}
+.wenzhang{
+	border: 1px solid #ddd;
+    border-left-width: 5px;
+    border-radius: 3px;
+    border-left-color: #5DADE2 ;
+    padding:5px 20px ;
+    color:#666;
+    margin-bottom:30px;
+    cursor: pointer;
+}
+footer{
+	width:100%;
+	height:42px;
+	line-height: 42px;
+	background-color:#f9f9f9;
+	color:#333;
+	text-align: center;
+	float:left;
+	border-top:1px solid #ccc;
+    margin-top:50px;
+}
+.head_text .donghua{
+	transform: translateY(30px);
+	opacity:0;
+	animation: bottom_top 0.8s forwards;
+}
+.time{
+	text-align: right;
+}
+.qianyan{
+    margin:15px 0;
+    font-size:16px;
+    color:#333;
+    line-height: 30px;
+}
+.qianyan span{
+    color:rgb(178, 107, 0);
+    font-weight: 900;
+}
+.qianyan a{
+    color:#948c76;
+    margin-left:8px;
+}
