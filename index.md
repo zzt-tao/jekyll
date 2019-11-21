@@ -29,47 +29,6 @@ zhuti: "./css/zhuti.css"
 			</div>
 		</a>
 	{% endfor %}
-	<!-- <div  class="wenzhang">
-		<h4>我的第一篇博客文章</h4>
-		<p>简介：第一次写博客文章，述说一些小小的心得，以作纪念。</p>	
-		<p class="time">2019-11-19</p>
-	</div>
-	<div  class="wenzhang">
-		<h4>我的第一篇博客文章</h4>
-		<p>简介：第一次写博客文章，述说一些小小的心得，以作纪念。</p>	
-		<p class="time">2019-11-19</p>
-	</div>
-	<div  class="wenzhang">
-		<h4>我的第一篇博客文章</h4>
-		<p>简介：第一次写博客文章，述说一些小小的心得，以作纪念。</p>	
-		<p class="time">2019-11-19</p>
-	</div>
-	<div  class="wenzhang">
-		<h4>我的第一篇博客文章</h4>
-		<p>简介：第一次写博客文章，述说一些小小的心得，以作纪念。</p>	
-		<p class="time">2019-11-19</p>
-	</div>
-	<div  class="wenzhang">
-		<h4>我的第一篇博客文章</h4>
-		<p>简介：第一次写博客文章，述说一些小小的心得，以作纪念。</p>	
-		<p class="time">2019-11-19</p>
-	</div>
-	<div  class="wenzhang">
-		<h4>我的第一篇博客文章</h4>
-		<p>简介：第一次写博客文章，述说一些小小的心得，以作纪念。</p>	
-		<p class="time">2019-11-19</p>
-	</div>
-	<div  class="wenzhang">
-		<h4>我的第一篇博客文章</h4>
-		<p>简介：第一次写博客文章，述说一些小小的心得，以作纪念。</p>	
-		<p class="time">2019-11-19</p>
-	</div>
-	<div  class="wenzhang">
-		<h4>我的第一篇博客文章</h4>
-		<p>简介：第一次写博客文章，述说一些小小的心得，以作纪念。</p>	
-		<p class="time">2019-11-19</p>
-	</div> -->
-	
 </div>
 
 </div>
