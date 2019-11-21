@@ -17,9 +17,7 @@ zhuti: "./css/zhuti.css"
 
 <div class="row-md-12" style="margin-top:50px;" >
 {% include leibiao.html %}
-
 <div class="col-md-8">
-
 	{% for post in site.posts %}
 		<a href="{{ site.baseurl }}{{ post.url }}">
 			<div  class="wenzhang">
