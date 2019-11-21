@@ -19,7 +19,17 @@ zhuti: "./css/zhuti.css"
 {% include leibiao.html %}
 
 <div class="col-md-8">
-	<div  class="wenzhang">
+
+	{% for post in site.posts %}
+		<a href="{{ post.url }}">
+			<div  class="wenzhang">
+				<h4>{{post.title}}</h4>
+				<p>{{ post.xiao_title }}</p>	
+				<p class="time">2019-11-19</p>
+			</div>
+		</a>
+	{% endfor %}
+	<!-- <div  class="wenzhang">
 		<h4>我的第一篇博客文章</h4>
 		<p>简介：第一次写博客文章，述说一些小小的心得，以作纪念。</p>	
 		<p class="time">2019-11-19</p>
@@ -58,7 +68,7 @@ zhuti: "./css/zhuti.css"
 		<h4>我的第一篇博客文章</h4>
 		<p>简介：第一次写博客文章，述说一些小小的心得，以作纪念。</p>	
 		<p class="time">2019-11-19</p>
-	</div>
+	</div> -->
 	
 </div>
 
