@@ -1,5 +1,7 @@
 ---
 layout: muban
+head: "./css/head.css"
+zhuti: "./css/zhuti.css"
 ---
 
 <div class="head">

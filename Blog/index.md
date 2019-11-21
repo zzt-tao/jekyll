@@ -1,5 +1,7 @@
 ---
 layout: post
+head: "#"
+zhuti: "#"
 ---
 
 ## 张梓涛写的第一篇博客
