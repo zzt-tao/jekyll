@@ -21,7 +21,7 @@ zhuti: "./css/zhuti.css"
 <div class="col-md-8">
 
 	{% for post in site.posts %}
-		<a href="{{ post.url }}">
+		<a href="{{ site.baseurl }}{{ post.url }}">
 			<div  class="wenzhang">
 				<h4>{{post.title}}</h4>
 				<p>{{ post.xiao_title }}</p>	
