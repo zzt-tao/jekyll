@@ -73,7 +73,7 @@
 		var i=1;
 		var index = setInterval(function(){ 
 			i++;
-			head_img.style.backgroundImage = "url('./img/bg"+i+".jpg')";
+			head_img.style.backgroundImage = "url('{{ site.baseurl }}/img/bg"+i+".jpg')";
 			i=i<3?i:0;
 		},10000);
 		setTimeout(function(){

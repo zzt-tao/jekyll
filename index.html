@@ -9,7 +9,7 @@ sosuo: true
 		<div></div>
 	</div>
 	<div class="head_text">
-		<img class="me_img donghua" src="./img/logo.jpg">
+		<img class="me_img donghua" src="{{ site.baseurl }}/img/logo.jpg">
 		<div class="donghua" style="font-size: 42px;animation-delay:0.4s;">你 好, 我 叫 张 梓 涛</div>
 		<div class="donghua" style="font-size: 24px;font-weight: 100;margin:1% auto;animation-delay:0.8s;">欢迎你来到我的博客</div>
 	</div>
@@ -17,8 +17,9 @@ sosuo: true
 
 <div class="row-md-12" style="margin-top:50px;" >
 {% include leibiao.html %}
+
 <div class="col-md-8">
-	{% for post in site.posts %}
+	{% for post in paginator.posts %}
 		<a href="{{ site.baseurl }}{{ post.url }}">
 			<div  class="wenzhang">
 				<h4>{{post.title}}</h4>
@@ -30,6 +31,21 @@ sosuo: true
 			</div> -->
 		</a>
 	{% endfor %}
-</div>
 
+<div style="width:100%;margin-top:50px;text-align: center;">
+	{% if paginator.previous_page %}
+	    <div style="float:left;"><a href="{{ site.baseurl }}{{ paginator.previous_page_path }}">上一页</a></div>
+	{% else %}
+	    <!-- <span class="previous">Previous</span> -->
+	{% endif %}
+	    页数: {{ paginator.page }} / {{ paginator.total_pages }}
+	{% if paginator.next_page %}
+	    <div style="float:right;"><a href="{{ site.baseurl }}{{ paginator.next_page_path }}">下一页</a></div>
+	{% else %}
+	    <!-- <span class="comments-link ">Next</span> -->
+	{% endif %}
+</div>
+	
+
+</div>
 </div>

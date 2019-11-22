@@ -2,3 +2,15 @@ baseurl: /jekyll/
 sass:
     sass_dir: _sass
     style: compressed
+
+
+#gems: [jekyll-paginate]
+
+#分页模块
+paginate: 6
+
+#指定引用哪个插件
+plugins: [jekyll-paginate]
+
+
+#遍历的对象要从site改为paginator
