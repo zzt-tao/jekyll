@@ -1,7 +1,7 @@
 ---
 layout: muban
-head: "./css/head.css"
-zhuti: "./css/zhuti.css"
+css: ["css/head.css","css/zhuti.css","css/style.css"]
+sosuo: true
 ---
 
 <div class="head">
@@ -23,8 +23,11 @@ zhuti: "./css/zhuti.css"
 			<div  class="wenzhang">
 				<h4>{{post.title}}</h4>
 				<p>{{ post.xiao_title }}</p>	
-				<p class="time">2019-11-19</p>
+				<p class="time">{{ post.date | truncate:10,"" }}</p>
 			</div>
+			<!-- <div class="tao">
+				{{ post }}
+			</div> -->
 		</a>
 	{% endfor %}
 </div>
