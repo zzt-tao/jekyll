@@ -79,6 +79,10 @@
 		setTimeout(function(){
 			head_img.style.animation="img_Bigger 10s infinite";
 		},1000);
+
+		var tag = location.href.split('?').pop();
+		$('#'+tag).css('display', 'block');
+		$('.site-heading h1').html('标签：'+tag);
 	})()
 </script>
 

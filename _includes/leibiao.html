@@ -1,20 +1,10 @@
 
-<div class="col-md-2 col-md-offset-1">
-  	<div class="list-group">
-		  <a href="#" class="list-group-item">
-		    HTML5+CSS3
-		  </a>
-		  <a href="#" class="list-group-item">JavaScript</a>
-		  <a href="#" class="list-group-item">PHP</a>
-		  <a href="#" class="list-group-item">MySQL</a>
-	</div>
-	<div>
-		{% for tag in site.tags %}
-		    {% assign count = tag | last | size %}
-		    {% assign fontsize = count | times: 4 %}
-		    {% if count %}
-		    <a class="post-tags-item" href="{{ page.url }}?keyword={{ tag | first }}" title="{{ tag | first }}" data-count="{{ count }}" style="font-size: {% if fontsize > 24 %}24{% else %}{{ fontsize }}{% endif %}px">{{ tag | first }}</a>
-		    {% endif %}
-		{% endfor %}
-	</div>
+
+<div class="list-group">
+	<a href="#" class="list-group-item">
+	HTML5+CSS3
+	</a>
+	<a href="#" class="list-group-item">JavaScript</a>
+	<a href="#" class="list-group-item">PHP</a>
+	<a href="#" class="list-group-item">MySQL</a>
 </div>

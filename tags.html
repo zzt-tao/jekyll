@@ -3,6 +3,11 @@ layout: muban
 css: ["css/head.css","css/zhuti.css","css/style.css"]
 sosuo: true
 ---
+<style>
+	.tagposts{
+		display: none;
+	}
+</style>
 
 <div class="head">
 	<div class="head_img">
@@ -30,30 +35,27 @@ sosuo: true
 	</div>
 
 	<div class="col-md-8">
-
-		{% for post in paginator.posts %}
-			<a href="{{ site.baseurl }}{{ post.url }}">
-				<div  class="wenzhang">
-					<h4>{{post.title}}</h4>
-					<p>{{ post.xiao_title }}</p>	
-					<p class="time">{{ post.date | truncate:10,"" }}</p>
-				</div>
-			</a>
-		{% endfor %}
-
-		<div style="width:100%;margin-top:50px;text-align: center;">
-			{% if paginator.previous_page %}
-			    <div style="float:left;"><a href="{{ site.baseurl }}{{ paginator.previous_page_path }}">上一页</a></div>
-			{% else %}
-			    <!-- <span class="previous">Previous</span> -->
-			{% endif %}
-			    页数: {{ paginator.page }} / {{ paginator.total_pages }}
-			{% if paginator.next_page %}
-			    <div style="float:right;"><a href="{{ site.baseurl }}{{ paginator.next_page_path }}">下一页</a></div>
-			{% else %}
-			    <!-- <span class="comments-link ">Next</span> -->
-			{% endif %}
+		{% for tag in site.tags %}
+      	<div style="display: none;" id="{{tag[0]}}">
+      		<h1>{{ tag[0] }}</h1>
+			{% for post in tag[1] %}
+				<a href="{{ site.baseurl }}{{ post.url }}">
+					<div  class="wenzhang">
+						<h4>{{post.title}}</h4>
+						<p>{{ post.xiao_title }}</p>	
+						<p class="time">{{ post.date | truncate:10,"" }}</p>
+					</div>
+				</a>
+			{% endfor %}
 		</div>
+		{% endfor %}
 
 	</div>
 </div>
+<script type="text/javascript">
+	var tag = location.href.split('?').pop();
+	$('#'+tag).css('display', 'block');
+	$('.site-heading h1').html('标签：'+tag);
+</script>
+
+
