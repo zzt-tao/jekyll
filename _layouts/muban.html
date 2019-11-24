@@ -24,7 +24,7 @@
 	</style>
 </head>
 <body>
-	<nav class="navbar navbar-default navbar-fixed-top" style="padding:5px 5%;background-color:#f9f9f9;">
+	<nav class="navbar navbar-default navbar-fixed-top" style="padding:5px 3%;background-color:#f9f9f9;">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" style="margin-right: 0;">
         <span class="sr-only">Toggle navigation</span>
@@ -77,10 +77,11 @@
 		setTimeout(function(){
 			head_img.style.animation="img_Bigger 10s infinite";
 		},1000);
-
-		var tag = location.href.split('?').pop();
-		$('#'+tag).css('display', 'block');
-		$('.site-heading h1').html('标签：'+tag);
+		if(location.href.indexOf("?")!=-1){
+			var tag = location.href.split('?').pop();
+			$('#'+tag).css('display', 'block');
+			$('.site-heading h1').html('标签：'+tag);
+		}
 	})()
 </script>
 
