@@ -1,10 +1,9 @@
 
 
-<div class="list-group">
-	<a href="#" class="list-group-item">
-	HTML5+CSS3
-	</a>
-	<a href="#" class="list-group-item">JavaScript</a>
-	<a href="#" class="list-group-item">PHP</a>
-	<a href="#" class="list-group-item">MySQL</a>
+<div class="biaoqian">
+	<h4>分类栏目</h4>
+	<a href="{{site.baseurl}}index.html">全部</a>
+	{% for tag in site.tags %}
+	    <a href="{{site.baseurl}}tags.html?{{tag[0]}}">{{tag[0]}}({{tag[1]|size}})</a>
+	{% endfor %}
 </div>

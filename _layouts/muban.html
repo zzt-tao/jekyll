@@ -24,33 +24,31 @@
 	</style>
 </head>
 <body>
-	<nav class="navbar navbar-default navbar-fixed-top" style="padding:5px 30px;background-color:#f9f9f9;">
-	  <div class="container-fluid"> 
-	    <div class="navbar-header">
-	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-	        <span class="sr-only">Toggle navigation</span>
-	        <span class="icon-bar"></span>
-	        <span class="icon-bar"></span>
-	        <span class="icon-bar"></span>
-	      </button>
-	      <a class="navbar-brand" href="{{ site.baseurl }}/index.html" style="color:#222;">张梓涛</a>
-	    </div>
-	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-	      <ul class="nav navbar-nav navbar-right">
-			    {% if page.sosuo != false %}
-				    <div class="tao_form">
-						<input type="text" placeholder="请输入文章名">
-						<div class="anniu">
-							<i class="glyphicon glyphicon-search"></i>
-						</div>
-				    </div>
-				  {% endif %}
-	        <li class="zhang"><a href="{{ site.baseurl }}/index.html">主页</a></li>
-	        <li><a href="{{ site.baseurl }}/resume/index.html">简历</a></li>
-	        <li><a href="#">留言</a></li>
-	      </ul>
-	    </div>
-	  </div>
+	<nav class="navbar navbar-default navbar-fixed-top" style="padding:5px 5%;background-color:#f9f9f9;">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" style="margin-right: 0;">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="{{ site.baseurl }}/index.html" style="color:#222;padding:15px 0;">张梓涛</a>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+		    {% if page.sosuo != false %}
+			    <div class="tao_form">
+					<input type="text" placeholder="请输入文章名">
+					<div class="anniu">
+						<i class="glyphicon glyphicon-search"></i>
+					</div>
+			    </div>
+			  {% endif %}
+        <li class="zhang"><a href="{{ site.baseurl }}/index.html">主页</a></li>
+        <li><a href="{{ site.baseurl }}/resume/index.html">简历</a></li>
+        <li><a href="#">留言</a></li>
+      </ul>
+    </div>
 	</nav>
 
 	{{ content }}

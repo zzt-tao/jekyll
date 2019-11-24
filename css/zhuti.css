@@ -56,9 +56,12 @@
     color:#948c76;
     margin-left:8px;
 }
-.col-md-8 a:hover{
+.col-md-9 a:hover .wenzhang{
+    color:#5197C6;
+}
+.col-md-9 a:hover{
     text-decoration: none;
 }
-.biaoqian a{
-    padding:3px 10px;border:1px solid #ccc;border-radius:5px;margin:5px;display: inline-block;
+.tagposts{
+    display: none;
 }

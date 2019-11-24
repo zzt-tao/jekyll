@@ -1,13 +1,8 @@
 ---
 layout: muban
-css: ["css/head.css","css/zhuti.css","css/style.css"]
+css: ["css/head.css","css/zhuti.css","css/style.css","css/public.css"]
 sosuo: true
 ---
-<style>
-	.tagposts{
-		display: none;
-	}
-</style>
 
 <div class="head">
 	<div class="head_img">
@@ -20,21 +15,13 @@ sosuo: true
 	</div>
 </div>
 
-<div class="row-md-12" style="margin-top:50px;" >
+<div class="row-md-12" style="margin-top:50px;padding:0 3%;" >
 
-	<div class="col-md-2 col-md-offset-1">
-		{% include leibiao.html %}
-		<div class="biaoqian">
-			<h4>标签</h4>
-			<a href="{{site.baseurl}}index.html">全部</a>
-			{% for tag in site.tags %}
-			    <a href="{{site.baseurl}}tags.html?{{tag[0]}}">{{tag[0]}}({{tag[1]|size}})</a>
-			{% endfor %}
-		</div>
-		
+	<div class="col-md-3">
+		{% include leibiao.html %}		
 	</div>
 
-	<div class="col-md-8">
+	<div class="col-md-9">
 		{% for tag in site.tags %}
       	<div style="display: none;" id="{{tag[0]}}">
       		<h1>{{ tag[0] }}</h1>

@@ -1,6 +1,6 @@
 ---
 layout: muban
-css: ["css/head.css","css/zhuti.css","css/style.css"]
+css: ["css/head.css","css/zhuti.css","css/style.css","css/public.css"]
 sosuo: true
 ---
 
@@ -15,21 +15,13 @@ sosuo: true
 	</div>
 </div>
 
-<div class="row-md-12" style="margin-top:50px;" >
+<div class="row-md-12" style="margin-top:35px;padding:0 5%;" >
 
-	<div class="col-md-2 col-md-offset-1">
+	<div class="col-md-3" style="padding-left:0;">
 		{% include leibiao.html %}
-		<div class="biaoqian">
-			<h4>标签</h4>
-			<a href="{{site.baseurl}}index.html">全部</a>
-			{% for tag in site.tags %}
-			    <a href="{{site.baseurl}}tags.html?{{tag[0]}}">{{tag[0]}}({{tag[1]|size}})</a>
-			{% endfor %}
-		</div>
-		
 	</div>
 
-	<div class="col-md-8">
+	<div class="col-md-9" style="padding-right:0;margin:15px 0;">
 
 		{% for post in paginator.posts %}
 			<a href="{{ site.baseurl }}{{ post.url }}">
