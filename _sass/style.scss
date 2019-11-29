@@ -111,3 +111,10 @@ header{
 	}
 
 }
+
+@media only screen and (max-width: 768px) {
+	.tao_form{
+		float:none;
+		margin-left: 15px;
+	}
+}
