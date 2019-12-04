@@ -46,7 +46,7 @@ Bootstrap需要为页面内容和栅栏系统包裹一个 `.container` 容器。
 4. `.col-lg-` **大屏幕** 大桌面显示器 (>=1200px)
 
 ### 实例应用
-1. 多个设备之间融合，一个元素可以写多个设备的栅格类。
+多个设备之间融合，一个元素可以写多个设备的栅格类。
 ```html
 <div class="row">
   <div class="col-xs-12 col-sm-6 col-md-8">.col-xs-12 .col-sm-6 .col-md-8</div>
@@ -59,9 +59,9 @@ Bootstrap需要为页面内容和栅栏系统包裹一个 `.container` 容器。
   <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
 </div>
 ```
-2. 多余的列将另起一行排序
-3. 列偏移：.col-md-offset-*
-4. 列排序：.col-md-push-* 数字大的在前面。
+1. 多余的列将另起一行排序
+1. 列偏移：.col-md-offset-*
+1. 列排序：.col-md-push-* 数字大的在前面。
 
 ## 排版标签
 ```html

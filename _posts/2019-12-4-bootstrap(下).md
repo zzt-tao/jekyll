@@ -214,7 +214,7 @@ tag: [Bootstrap]
 <div class="alert alert-warning" role="alert">...</div>//黄色
 <div class="alert alert-danger" role="alert">...</div>//红色
 ```
-- 可以为警告框添加 `.alert-dismissible`类和关闭按钮。
+可以为警告框添加 `.alert-dismissible`类和关闭按钮。
 ```html
 <div class="alert alert-warning alert-dismissible" role="alert">
   //注意：data-dismiss="alert"属性不能缺少
@@ -222,4 +222,4 @@ tag: [Bootstrap]
   <strong>Warning!</strong> Better check yourself, you're not looking too good.
 </div>
 ```
-- 可以为警告框中的a标签添加 `.alert-link` 类，会生成相应的a标签链接。
+可以为警告框中的a标签添加 `.alert-link` 类，会生成相应的a标签链接。
