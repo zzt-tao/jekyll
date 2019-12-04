@@ -12,5 +12,7 @@ paginate: 6
 #指定引用哪个插件
 plugins: [jekyll-paginate]
 
+highlighter: rouge
+
 
 #遍历的对象要从site改为paginator

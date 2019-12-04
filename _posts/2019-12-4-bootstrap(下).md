@@ -7,7 +7,7 @@ xiao_title: 之前已经学过bootstrap了，现在由于1+X证书考证需要�
 tag: [Bootstrap]
 ---
 
-# bootstrap笔记
+# bootstrap笔记(下)
 
 ## 下拉菜单
 1、菜单触发器和菜单都要包裹在 `.dropdown` 或 `.dropup`里(一个菜单向下，一个向上)，或者拥有 `position:relative;`的元素里。

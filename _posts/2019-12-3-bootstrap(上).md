@@ -7,7 +7,7 @@ xiao_title: 之前已经学过bootstrap了，现在由于1+X证书考证需要�
 tag: [Bootstrap]
 ---
 
-# bootstrap笔记
+# bootstrap笔记(上)
 	
 ## bootstrap移动设备优先
 	
