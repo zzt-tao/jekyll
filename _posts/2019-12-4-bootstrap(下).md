@@ -10,8 +10,7 @@ tag: [Bootstrap]
 # bootstrap笔记
 
 ## 下拉菜单
-### 实例 
-菜单触发器和菜单都要包裹在 `.dropdown` 或 `.dropup`里(一个菜单向下，一个向上)，或者拥有 `position:relative;`的元素里。
+1、菜单触发器和菜单都要包裹在 `.dropdown` 或 `.dropup`里(一个菜单向下，一个向上)，或者拥有 `position:relative;`的元素里。
 ```html
 <div class="dropdown">
   <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
@@ -27,14 +26,14 @@ tag: [Bootstrap]
   </ul>
 </div>
 ```
-小知识：可以将按钮和按钮组的知识添加到菜单触发器里，实现按钮式下拉菜单和分裂式下拉菜单(使用一个按钮组);
-### 更多
+2、小知识：可以将按钮和按钮组的知识添加到菜单触发器里，实现按钮式下拉菜单和分裂式下拉菜单(使用一个按钮组);
+#### 更多
 - 菜单左右对齐：`dropdown-menu-left` 和 `dropdown-menu-right` ;
 - `.dropdown-header` 标题样式，应添加在菜单的第一个元素里。
 - `.divider`为分割线。
 - `.disabled` 为禁用菜单项。(也可以禁用导航栏等)
 
-## 按钮组
+## 按钮组和输入框组
 - `.btn-group`类为一个按钮组，按钮组之间可以互相嵌套，可以把按钮组放入按钮组中。
 - `.btn-toolbar`类为按钮组的父元素，可实现多个按钮组排成一列。
 - `.btn-group-lg` 类为最大。
@@ -42,19 +41,23 @@ tag: [Bootstrap]
 - `.btn-group-xs` 类为最小，不添加为默认大小。
 - `.btn-group-vertical` 类为垂直排序。
 - 在类为 `.btn-group` 中添加 `.btn-group-justified` 类就可实现两端对齐。
-
-## 输入框组
 - `.input-group`类为输入框组
 - `.input-gruop-addon`类可以在输入框前添加提示文本，也可以将其他元素放入其中。如多选框、单选框、按钮、下拉菜单等。
 - 尺寸和按钮组一致。
 
+
 ## 导航、导航条和路径导航
-`.nav`为导航类，在此类里添加`.nav-justified`实现导航栏两端对齐。
-`.nav-tabs`标签式导航栏
-`.nav-pills`胶囊式导航栏，`.nav-stacked`让胶囊式导航栏垂直排序。
-`.disabled`禁用式的导航链接。
-注释：可以在导航栏里添加下拉菜单和表单等。
-导航条案例
+#### 导航
+- `.nav`为导航类，在此类里添加`.nav-justified`实现导航栏两端对齐。
+- `.nav-tabs`标签式导航栏
+- `.nav-pills`胶囊式导航栏，`.nav-stacked`让胶囊式导航栏垂直排序。
+- `.disabled`禁用式的导航链接。
+- 注释：可以在导航栏里添加下拉菜单和表单等。
+#### 导航条案例
+- `.navbar-fixed-top` 将导航条固定在顶部。
+- `.navbar-fixed-bottom` 将导航条固定在底部。
+- `.navbar-static-top` 静止在头部。
+- `.navbae-inverse` 导航条黑色。
 ```html
 <nav class="navbar navbar-default">
   <div class="container-fluid">
@@ -115,11 +118,6 @@ tag: [Bootstrap]
   </div>
 </nav>
 ```
-- `.navbar-fixed-top` 将导航条固定在顶部。
-- `.navbar-fixed-bottom` 将导航条固定在底部。
-- `.navbar-static-top` 静止在头部。
-- `.navbae-inverse` 导航条黑色。
-
 #### 路径导航
 ```html
 <ol class="breadcrumb">
@@ -164,7 +162,8 @@ tag: [Bootstrap]
 </nav>
 ```
 
-## 标签和徽章
+
+## 标签、徽章、巨幕和页头
 #### 标签实例
 ```html
 <span class="label label-default">Default</span>//默认样式
@@ -178,7 +177,6 @@ tag: [Bootstrap]
 ```html
 <span class="badge">42</span>//可以给按钮、链接等添加一个提示。
 ```
-## 巨幕和页头
 #### 巨幕实例
 ```html
 <div class="jumbotron">//巨幕
@@ -195,6 +193,8 @@ tag: [Bootstrap]
   <h1>Example page header <small>Subtext for header</small></h1>
 </div>
 ```
+
+
 ## 缩略图和警告框
 #### 缩略图实例
 ```html
@@ -204,7 +204,7 @@ tag: [Bootstrap]
       <img src="..." alt="...">
     </a>
   </div>
-  ...//自己结合之前的知识自由搭配
+  ...//自己结合之前的知识自由搭配，如使用按钮标题等
 </div>
 ```
 #### 警告框实例
@@ -214,7 +214,7 @@ tag: [Bootstrap]
 <div class="alert alert-warning" role="alert">...</div>//黄色
 <div class="alert alert-danger" role="alert">...</div>//红色
 ```
-可以为警告框添加 `.alert-dismissible`类和关闭按钮。
+1、可以为警告框添加 `.alert-dismissible`类和关闭按钮。
 ```html
 <div class="alert alert-warning alert-dismissible" role="alert">
   //注意：data-dismiss="alert"属性不能缺少
@@ -222,4 +222,68 @@ tag: [Bootstrap]
   <strong>Warning!</strong> Better check yourself, you're not looking too good.
 </div>
 ```
-可以为警告框中的a标签添加 `.alert-link` 类，会生成相应的a标签链接。
+2、可以为警告框中的a标签添加 `.alert-link` 类，会生成相应的a标签链接。
+
+
+## 进度条
+- **`.progress`** 为进度条容器，**`.progress-bar`** 为进度条对象。
+- **`.progress-bar-success/info/warning/danger`** 添加颜色(绿色、蓝色、黄色、红色)
+- **`.progress-bar-striped`** 条纹样式
+- **`.active`** 动画样式。
+- 堆叠效果：将多个`progress-bar`放入同一个`.progress`中。
+#### 进度条条纹效果实例
+```html
+	<div class="progress">//进度条类
+	  //progress-bar进度条基本样式，progress-bar-success成功样式，progress-bar-striped条纹样式，aria-valuenow百分之多少，aria-valuemax最大为多少
+	  <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+		<span class="sr-only">40% Complete (success)</span>//该标签会被隐藏。
+	  </div>
+	</div>
+	//其余同上
+	<div class="progress">
+	  <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+		20%//会显示在进度条中间
+	  </div>
+	</div>
+	<div class="progress">
+	  <div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+		<span class="sr-only">60% Complete (warning)</span>
+	  </div>
+	</div>
+	<div class="progress">
+	  <div class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+		<span class="sr-only">80% Complete (danger)</span>
+	  </div>
+	</div>
+```
+
+
+## 媒体对象
+- **`.media`** 媒体对象容器，用来容纳媒体对象的所有内容。
+- **`.media-object`** 媒体对象。
+- **`.media-body`** 媒体对象的主体内容。
+- **`.media-heading`** 媒体对象主体中的标题。
+```html
+<div class="media">
+  <div class="media-left media-middle">
+    <a href="#">
+      <img class="media-object" src="..." alt="...">
+    </a>
+  </div>
+  <div class="media-body">
+    <h4 class="media-heading">Middle aligned media</h4>
+    ...
+  </div>
+</div>`
+```
+
+
+## 列表组和面板
+#### 列表组 
+**`.list-group`** 列表容器。**`.list-group-item`** 列表项。
+**`list-group-success/info/warning/danger`** 添加颜色，老规矩。
+小知识：列表中可以使用a标签或按钮代替li，可以添加徽章，`active`为激活，`disabled`为禁用
+#### 面板
+**`.panel`** 面板容器，**`.panel-heading`** 面板头部，**`.panel-body`** 面板主体，**`.panel-footer`** 面板尾部
+**`.panel-default/success/info/warning/danger`** 面案颜色
+小知识：可以在面板主体中使用表格和列表组。
