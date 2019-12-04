@@ -58,6 +58,7 @@ tag: [Bootstrap]
 - `.navbar-fixed-bottom` 将导航条固定在底部。
 - `.navbar-static-top` 静止在头部。
 - `.navbae-inverse` 导航条黑色。
+
 ```html
 <nav class="navbar navbar-default">
   <div class="container-fluid">
@@ -118,6 +119,7 @@ tag: [Bootstrap]
   </div>
 </nav>
 ```
+
 #### 路径导航
 ```html
 <ol class="breadcrumb">
@@ -263,6 +265,7 @@ tag: [Bootstrap]
 - **`.media-object`** 媒体对象。
 - **`.media-body`** 媒体对象的主体内容。
 - **`.media-heading`** 媒体对象主体中的标题。
+
 ```html
 <div class="media">
   <div class="media-left media-middle">
