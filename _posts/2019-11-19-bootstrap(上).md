@@ -46,7 +46,7 @@ Bootstrap需要为页面内容和栅栏系统包裹一个 `.container` 容器。
 4. `.col-lg-` **大屏幕** 大桌面显示器 (>=1200px)
 
 ### 实例应用
-1. 多个设备之间融合，一个元素可以写多个设备的栅格类
+1. 多个设备之间融合，一个元素可以写多个设备的栅格类。
 ```html
 <div class="row">
   <div class="col-xs-12 col-sm-6 col-md-8">.col-xs-12 .col-sm-6 .col-md-8</div>
