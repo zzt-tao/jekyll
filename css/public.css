@@ -1,6 +1,12 @@
-.biaoqian{
+.biaoqian,.lianjie{
 	margin:10px 0;
 }
 .biaoqian a{
     padding:5px 15px;border:1px solid #ccc;border-radius:5px;margin:5px 10px 5px 0;display: inline-block;
+}
+.lianjie{
+	margin-top: 30px;
+}
+.lianjie a{
+	text-decoration: none;
 }

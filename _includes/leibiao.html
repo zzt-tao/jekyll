@@ -7,3 +7,10 @@
 	    <a href="{{site.baseurl}}tags.html?{{tag[0]}}">{{tag[0]}}({{tag[1]|size}})</a>
 	{% endfor %}
 </div>
+
+<div class="lianjie">
+	<h4>友情链接</h4>
+	{% for lianjie in site.lianjie %}
+		<a href="{{ lianjie.url }}" target="_blank">{{ lianjie.name }}</a>
+	{% endfor %}
+</div>

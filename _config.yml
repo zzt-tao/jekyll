@@ -14,5 +14,5 @@ plugins: [jekyll-paginate]
 
 highlighter: rouge
 
-
+lianjie: [{"name":"李泽龙","url":"https://www.lizelong.com/"}]
 #遍历的对象要从site改为paginator
